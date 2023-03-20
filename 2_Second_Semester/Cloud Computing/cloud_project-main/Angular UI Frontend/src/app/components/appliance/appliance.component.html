@@ -1,0 +1,24 @@
+<div class="device">
+  <div class="device-head">
+    <div class="device-head-name">{{applianceState.appliance}}</div>
+    <mat-slide-toggle
+      checked="{{applianceState.state}}"
+      id="device-{{applianceState.id}}-toggle"
+      (change)="toggleAppliance($event)"
+    >
+    </mat-slide-toggle>
+  </div>
+  <div class="device-slider">
+    <mat-slider
+    value={{applianceState.value}}
+    id="device-{{applianceState.id}}-slider"
+    [disabled]=!applianceState.state
+    [min]="getApplianceCharacteristic(applianceState.appliance, 'min')"
+    [max]="getApplianceCharacteristic(applianceState.appliance, 'max')"
+    [step]="getApplianceCharacteristic(applianceState.appliance, 'step')"
+    [thumbLabel]="true"
+    (change)="updateApplianceState($event, applianceState.appliance)"
+    >
+    </mat-slider>
+  </div>
+</div>
