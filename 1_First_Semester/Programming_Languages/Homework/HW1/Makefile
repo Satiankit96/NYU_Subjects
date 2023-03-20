@@ -1,0 +1,1 @@
+all: as14128.calc.y as14128.calc.l ; bison -dy as14128.calc.y && flex as14128.calc.l && g++ lex.yy.c y.tab.c -o calculator
