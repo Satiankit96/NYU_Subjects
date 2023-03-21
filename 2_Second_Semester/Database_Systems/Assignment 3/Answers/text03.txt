@@ -1,0 +1,28 @@
+METADATA
+
+My Name
+Ankit Sati
+
+My Net ID
+as14128
+
+Computer I used to produce the ER diagram: owner and model
+My own computer. HP Pavilion Notebook.
+
+The operating system on the computer I used
+Microsoft Windows 10 Home
+
+
+ANNOTATIONS
+
+1. Student cannot be their own Mentor.
+2. Each Dog bites atleast 2 other dogs.
+3. If student0 introduces student1 to student2, then all 3 must be different.
+4. Introduces is a total relationship. 
+5. A dog may not bite itself.
+
+RESPONSES
+
+(a) Yes
+
+(b) Yes
