@@ -1,0 +1,9 @@
+ANNOTATIONS
+
+1. Each Dog Bites 2 or more Dogs
+
+2. A Dog may not Bite itself
+
+3.  If Student0 Introduces Student1 to Student2, all these Students are different.
+
+4. A Student cannot Monitor itself.

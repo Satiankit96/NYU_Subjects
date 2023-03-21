@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architect-project version="1.0" appversion="1.0.9">
+ <project-name>Relational05N</project-name>
+ <print-settings numCopies="1" zoom="1.0" pageNumbersPrinted="true" orientation="1" paperWidth="612.0" paperHeight="792.0" leftBorder="50.0" rightBorder="50.0" topBorder="50.0" bottomBorder="50.0" />
+ <project-data-sources>
+  <data-source id="DS0">
+   <property key="Logical" value="PlayPen Database" />
+  </data-source>
+ </project-data-sources>
+ <source-databases>
+ </source-databases>
+ <target-database id="ppdb" dbcs-ref="DS0">
+  <table id="TAB1" populated="true" UUID="3d9f5605-a36f-4863-81df-b68532835f8c" name="MyNetID" objectType="TABLE" physicalName="MyNetID" >
+   <remarks></remarks>
+   <folder id="FOLTAB11" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL2" populated="true" UUID="de0482c3-49d2-47ff-8fbe-3a535d2869a7" autoIncrement="false" autoIncrementSequenceName="MyNetID_as14128_seq" defaultValue="" name="as14128" nullable="0" physicalName="as14128" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB13" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB12" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB14" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX3" populated="true" UUID="022863b6-b64b-4ddf-9af7-a7017c3e7dd4" clustered="false" name="MyNetID_pk" physicalName="MyNetID_pk" primaryKeyIndex="true" unique="false" >
+    </index>
+   </folder>
+  </table>
+  <table id="TAB4" populated="true" UUID="d615c15c-add8-4d1e-802a-3775ff19738b" name="Student" objectType="TABLE" physicalName="Student" >
+   <remarks></remarks>
+   <folder id="FOLTAB41" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL5" populated="true" UUID="1c85bb0f-f192-4290-87e5-e1103fcbc864" autoIncrement="false" autoIncrementSequenceName="Student_NetID_seq" defaultValue="" name="NetID" nullable="0" physicalName="NetID" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL6" populated="true" UUID="6bcd6ed4-862b-43c1-a4a3-a98dec0080f8" autoIncrement="false" autoIncrementSequenceName="Student_NetID_seq" defaultValue="" name="MentorNetID" nullable="1" physicalName="MentorNetID" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL7" populated="true" UUID="b9dc95ec-a414-4b92-bda9-69816230070c" autoIncrement="false" autoIncrementSequenceName="Dog_BiterSerialNum_seq" defaultValue="" name="BiterSerialNum" nullable="1" physicalName="BiterSerialNum" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL8" populated="true" UUID="e248c216-d3fa-49d5-8f83-6c3564227554" autoIncrement="false" autoIncrementSequenceName="Student_BiterNetID_seq" defaultValue="" name="BiterNetID" nullable="1" physicalName="BiterNetID" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL9" populated="true" UUID="fda757cd-7b56-49dd-9db7-639182ef50d7" autoIncrement="false" autoIncrementSequenceName="Dog_BiteeSerialNum_seq" defaultValue="" name="BiteeSerialNum" nullable="1" physicalName="BiteeSerialNum" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL10" populated="true" UUID="966d6a9a-f5fc-489d-81da-3bfc19a6b961" autoIncrement="false" autoIncrementSequenceName="Student_BiteeNetID_seq" defaultValue="" name="BiteeNetID" nullable="1" physicalName="BiteeNetID" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB43" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB42" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB44" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX11" populated="true" UUID="f5579ea8-db8e-4970-bb32-df03811dd5d8" clustered="false" name="Student_pk" physicalName="Student_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC12" populated="true" UUID="b62d542a-1c56-446d-85f3-fae93a1bd170" ascendingOrDescending="UNSPECIFIED" column-ref="COL5" name="NetID" physicalName="NetID" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB13" populated="true" UUID="23446d9c-6011-4340-aca8-bb92716c5ac1" name="Dog" objectType="TABLE" physicalName="Dog" >
+   <remarks></remarks>
+   <folder id="FOLTAB131" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL14" populated="true" UUID="d7f07f00-e7d7-49d9-8a16-17923ff551e4" autoIncrement="false" autoIncrementSequenceName="Dog_SerialNum_seq" defaultValue="" name="SerialNum" nullable="0" physicalName="SerialNum" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL15" populated="true" UUID="153e5ccb-7b7c-4455-86a6-94380028c332" autoIncrement="false" autoIncrementSequenceName="Student_NetID_seq" defaultValue="" name="NetID" nullable="0" physicalName="NetID" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL16" populated="true" UUID="d8fc9720-1d46-43fe-b1af-16916b7342f8" autoIncrement="false" autoIncrementSequenceName="Dog_Date_seq" defaultValue="" name="Date" nullable="0" physicalName="Date" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB133" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB132" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB134" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX17" populated="true" UUID="00bc4671-6f13-417c-b585-73619c3e1293" clustered="false" name="Dog_pk" physicalName="Dog_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC18" populated="true" UUID="d37d2c0c-01bb-439d-961b-4afdd06374bb" ascendingOrDescending="UNSPECIFIED" column-ref="COL14" name="SerialNum" physicalName="SerialNum" />
+     <index-column id="IDC19" populated="true" UUID="f33691cd-a884-4094-a7fe-9d9baea4a852" ascendingOrDescending="UNSPECIFIED" column-ref="COL15" name="NetID" physicalName="NetID" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB20" populated="true" UUID="2dafe56f-dd10-4da2-a94e-042bfeb84327" name="Bites" objectType="TABLE" physicalName="Bites" >
+   <remarks></remarks>
+   <folder id="FOLTAB201" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL21" populated="true" UUID="865bd7d9-03a3-40af-885b-20173e86e334" autoIncrement="false" autoIncrementSequenceName="Dog_BiterSerialNum_seq" defaultValue="" name="BiterSerialNum" nullable="0" physicalName="BiterSerialNum" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL22" populated="true" UUID="ac61d4c7-dbea-4695-882a-c9092a406cf0" autoIncrement="false" autoIncrementSequenceName="Student_BiterNetID_seq" defaultValue="" name="BiterNetID" nullable="0" physicalName="BiterNetID" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL23" populated="true" UUID="f6441eca-6058-4907-acc9-472b0349a8e8" autoIncrement="false" autoIncrementSequenceName="Dog_BiteeSerialNum_seq" defaultValue="" name="BiteeSerialNum" nullable="0" physicalName="BiteeSerialNum" precision="0" primaryKeySeq="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL24" populated="true" UUID="4969f365-eb58-441c-9b10-d24b4eb64864" autoIncrement="false" autoIncrementSequenceName="Student_BiteeNetID_seq" defaultValue="" name="BiteeNetID" nullable="0" physicalName="BiteeNetID" precision="0" primaryKeySeq="3" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB203" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB202" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB204" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX25" populated="true" UUID="a7d0b768-6735-4077-89a8-dc1974af8fba" clustered="false" name="Bites_pk" physicalName="Bites_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC26" populated="true" UUID="9f5926c8-46ab-4e7d-b896-687d63893fdf" ascendingOrDescending="UNSPECIFIED" column-ref="COL21" name="BiterSerialNum" physicalName="BiterSerialNum" />
+     <index-column id="IDC27" populated="true" UUID="46a82233-d651-43ad-b5a2-83ea58a15be2" ascendingOrDescending="UNSPECIFIED" column-ref="COL22" name="BiterNetID" physicalName="BiterNetID" />
+     <index-column id="IDC28" populated="true" UUID="8a2b2432-fc51-442f-8b21-014bb9202a52" ascendingOrDescending="UNSPECIFIED" column-ref="COL23" name="BiteeSerialNum" physicalName="BiteeSerialNum" />
+     <index-column id="IDC29" populated="true" UUID="d2634cbd-0759-4755-a833-717e02b73b8c" ascendingOrDescending="UNSPECIFIED" column-ref="COL24" name="BiteeNetID" physicalName="BiteeNetID" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB30" populated="true" UUID="6a1ecbf2-7640-4801-89f5-9112b4943afa" name="Introduces" objectType="TABLE" physicalName="Introduces" >
+   <remarks></remarks>
+   <folder id="FOLTAB301" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL31" populated="true" UUID="39904dca-7eae-4510-929b-bd3a972dea38" autoIncrement="false" autoIncrementSequenceName="Student_IntroduceeNetID_seq" defaultValue="" name="IntroduceeNetID" nullable="0" physicalName="IntroduceeNetID" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL32" populated="true" UUID="3364d51d-c234-4e8b-94ab-83ae22957c38" autoIncrement="false" autoIncrementSequenceName="Student_IntroducedNetID_seq" defaultValue="" name="IntroducedNetID" nullable="0" physicalName="IntroducedNetID" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL33" populated="true" UUID="c7da277b-dca7-4b2a-a44d-e38ad2624c0e" autoIncrement="false" autoIncrementSequenceName="Student_IntroducingNetID_seq" defaultValue="" name="IntroducingNetID" nullable="1" physicalName="IntroducingNetID" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB303" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB302" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB304" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX34" populated="true" UUID="8f392d63-881f-432b-97ad-7a578644a8e5" clustered="false" name="Introduces_pk" physicalName="Introduces_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC35" populated="true" UUID="6e8bdeb4-2990-4923-a0eb-142415dfdb45" ascendingOrDescending="UNSPECIFIED" column-ref="COL31" name="IntroduceeNetID" physicalName="IntroduceeNetID" />
+     <index-column id="IDC36" populated="true" UUID="8d326e5c-2241-4f67-b876-61602bbc368d" ascendingOrDescending="UNSPECIFIED" column-ref="COL32" name="IntroducedNetID" physicalName="IntroducedNetID" />
+    </index>
+   </folder>
+  </table>
+  <relationships>
+   <relationship id="REL37" populated="true" UUID="d39c8556-d037-4a5e-854f-e88e42821844" deferrability="7" deleteRule="3" fk-table-ref="TAB13" fkCardinality="7" identifying="true" name="Student_Dog_fk" physicalName="Student_Dog_fk" pk-table-ref="TAB4" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP38" populated="true" UUID="c5376bc0-9ebd-4664-be8c-6c81a8ce92cc" fk-column-ref="COL15" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL5" />
+   </relationship>
+   <relationship id="REL39" populated="true" UUID="b7162760-c636-43fa-8ba7-74c0d40b043f" deferrability="7" deleteRule="3" fk-table-ref="TAB4" fkCardinality="3" identifying="false" name="Student_Student_fk" physicalName="Student_Student_fk" pk-table-ref="TAB4" pkCardinality="7" updateRule="3" >
+    <column-mapping id="CMP40" populated="true" UUID="7d2ecd15-cd7c-4312-a5bd-98e7a34f97ff" fk-column-ref="COL6" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL5" />
+   </relationship>
+   <relationship id="REL41" populated="true" UUID="b600e38c-f91d-4479-8dbc-3a9bbb9cd344" deferrability="7" deleteRule="3" fk-table-ref="TAB30" fkCardinality="7" identifying="true" name="Student_Introduces_fk" physicalName="Student_Introduces_fk" pk-table-ref="TAB4" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP42" populated="true" UUID="fb187ae0-6998-4dab-90ea-2ad8a20d8615" fk-column-ref="COL31" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL5" />
+   </relationship>
+   <relationship id="REL43" populated="true" UUID="e2dc9bff-17f6-42d8-ab33-444807e1c12f" deferrability="7" deleteRule="3" fk-table-ref="TAB30" fkCardinality="7" identifying="true" name="Student_Introduces_fk1" physicalName="Student_Introduces_fk1" pk-table-ref="TAB4" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP44" populated="true" UUID="cb4b13d7-aa1a-41b9-90af-962a4e1060c2" fk-column-ref="COL32" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL5" />
+   </relationship>
+   <relationship id="REL45" populated="true" UUID="2da1ced5-d3cb-4236-bbb1-9a3d52411505" deferrability="7" deleteRule="3" fk-table-ref="TAB30" fkCardinality="7" identifying="false" name="Student_Introduces_fk2" physicalName="Student_Introduces_fk2" pk-table-ref="TAB4" pkCardinality="3" updateRule="3" >
+    <column-mapping id="CMP46" populated="true" UUID="8ffa01b1-8824-416f-b87d-d62a6c944eae" fk-column-ref="COL33" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL5" />
+   </relationship>
+   <relationship id="REL47" populated="true" UUID="6d54bf80-ed24-40cd-a234-7185073b8eb7" deferrability="7" deleteRule="3" fk-table-ref="TAB20" fkCardinality="6" identifying="true" name="Dog_Bites_fk" physicalName="Dog_Bites_fk" pk-table-ref="TAB13" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP48" populated="true" UUID="9dc8c15e-ddaf-4472-9093-e712d2dcf63f" fk-column-ref="COL21" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL14" />
+    <column-mapping id="CMP49" populated="true" UUID="8acb6f85-7b91-4622-9f39-0b8a9a1ed683" fk-column-ref="COL22" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL15" />
+   </relationship>
+   <relationship id="REL50" populated="true" UUID="6fab123d-f23b-464d-a16e-c47f30727031" deferrability="7" deleteRule="3" fk-table-ref="TAB20" fkCardinality="7" identifying="true" name="Dog_Bites_fk1" physicalName="Dog_Bites_fk1" pk-table-ref="TAB13" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP51" populated="true" UUID="e1d7959d-cfea-4517-8cac-5ec762232bc2" fk-column-ref="COL23" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL14" />
+    <column-mapping id="CMP52" populated="true" UUID="c0ca0791-e133-4ac2-b9d5-f18aa6d95750" fk-column-ref="COL24" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL15" />
+   </relationship>
+   <relationship id="REL53" populated="true" UUID="dd937fd4-b088-4a7d-ad1b-a7afa831a21e" deferrability="7" deleteRule="3" fk-table-ref="TAB4" fkCardinality="7" identifying="false" name="Bites_Student_fk" physicalName="Bites_Student_fk" pk-table-ref="TAB20" pkCardinality="3" updateRule="3" >
+    <column-mapping id="CMP54" populated="true" UUID="a02810b3-f01d-42d0-a6aa-78f75245d7fd" fk-column-ref="COL10" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL24" />
+    <column-mapping id="CMP55" populated="true" UUID="013d67e1-cb08-4f89-9903-8baf5ed1f2a6" fk-column-ref="COL8" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL22" />
+    <column-mapping id="CMP56" populated="true" UUID="12e02b96-0cd8-44b3-80f0-1eda2d6ce0a7" fk-column-ref="COL9" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL23" />
+    <column-mapping id="CMP57" populated="true" UUID="03eb6674-8f39-4139-b851-1c5eae999085" fk-column-ref="COL7" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL21" />
+   </relationship>
+  </relationships>
+ </target-database>
+ <ddl-generator type="ca.sqlpower.architect.ddl.GenericDDLGenerator" allow-connection="true"> </ddl-generator>
+ <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
+ <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
+ <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+  <table-pane table-ref="TAB1" x="41" y="41" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB4" x="435" y="262" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB13" x="938" y="225" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB20" x="938" y="354" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB30" x="480" y="65" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL37" pkConnection="0.1732283464566929" fkConnection="0.7468354430379747" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL39" pkConnection="0.0430622009569378" fkConnection="0.47619047619047616" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="36"/>
+  <table-link relationship-ref="REL47" pkConnection="0.5485232067510548" fkConnection="0.47794117647058826" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL50" pkConnection="0.7468354430379747" fkConnection="0.6507352941176471" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL41" pkConnection="0.2966507177033493" fkConnection="0.05054151624548736" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL43" pkConnection="0.49760765550239233" fkConnection="0.19855595667870035" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL45" pkConnection="0.7081339712918661" fkConnection="0.3574007220216607" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL53" pkConnection="0.10526315789473684" fkConnection="0.8031496062992126" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
+ </play-pen>
+ <critic-manager>
+  <critic-grouping platformType="Generic" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PrimaryKeyCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.RelationshipMappingTypeCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.EmptyRelationshipCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericSequenceNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetDefaultOnColumnWithNoDefaultCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetNullOnNonNullableColumnCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DuplicateNameCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="DB2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DB2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="H2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.H2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="HSQLDB" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.HSQLDBUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="MySQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLCommentCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="Oracle" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OraclePhysicalNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="PostgreSQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PostgreSQLReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerUnsupportedFeaturesCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2000" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2000UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2005" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2005UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+ </critic-manager>
+ <profiles topNCount="10">
+  </profiles>
+  <olap>
+  </olap>
+  <olap-gui>
+  </olap-gui>
+</architect-project>

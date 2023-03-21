@@ -1,0 +1,26 @@
+METADATA
+
+My Name
+Ankit Sai
+
+My Net ID
+as14128
+
+Computer I used to produce the ER diagram: owner and model
+My own computer. HP Pavilion Notebook.
+
+The operating system on the computer I used
+Microsoft Windows 10 Home
+
+
+ANNOTATIONS
+1. Each Dog Bites 2 or more Dogs
+For each tuple (biterserial, biteenetid) in table bites, there exists two distinct tuples (biteeserial, biteenetid) in table bites.
+
+2. A Dog may not Bite itself
+
+3. If Student 0 Introduces Student1 to Student 2, all these Students are different.
+In table student, student0 introduces student 1 to student 2, then student 0, student 1 and student 2 are all different.
+
+4. A Student cannot Monitor itself.
+Mentornet-id and net-id in table student are distinct.
