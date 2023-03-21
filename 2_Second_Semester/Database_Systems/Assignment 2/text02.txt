@@ -1,0 +1,25 @@
+METADATA
+
+My Name
+Ankit Sati
+
+My Net ID
+as14128
+
+Computer I used to produce the ER diagram: owner and model
+My own computer. HP Pavilion Notebook.
+
+The operating system on the computer I used
+Microsoft Windows 10 Home
+
+
+ANNOTATIONS
+
+1. NetID is always known and is unique.
+2. SSN is always unique.
+3. Cost is computed as product of 5 and the difference between the Year in the Date and 2010.
+4. Dog never Bites itself.
+
+RESPONSES
+
+(a) Yes
