@@ -1,0 +1,1 @@
+all: lab.cpp ; g++ -o scheduler lab.cpp
