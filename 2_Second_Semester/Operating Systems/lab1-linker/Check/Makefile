@@ -1,0 +1,1 @@
+all: linker.cpp; g++ -o linker linker.cpp
