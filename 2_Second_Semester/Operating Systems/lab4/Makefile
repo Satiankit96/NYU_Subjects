@@ -1,0 +1,1 @@
+all: lab22.cpp;g++ -std=c++11 -g lab22.cpp -o iosched
