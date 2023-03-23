@@ -1,0 +1,48 @@
+as14128
+
+Please replace the NetID above with your own NetID
+
+Please replace [] parts with your own answer.
+
+
+ANSWER4:
+- Tables changed (if any): [state table name(s) here]
+    - Explain: [why the table(s) were changed]
+- Error messages (if any): [Y]
+    - Message: [ORA-02292: integrity constraint (AS14128.DOG_FK) violated - child record found]
+    - Explain: [ The error indicates that integretiy constraint was violated. It occured because 
+                we attempted to delete a record from a parent table (STUDENT) which has a foreign key reference (NNUMBER) 
+                to a child table (DOG) but a record exists in that child table.]
+
+ANSWER5:
+- Tables changed (if any): [STUDENT]
+    - Explain: [ The record with NNUMBER equal to 6 in the table STUDENT was successfuly updated as we decreased its DEPOSIT amount by 5 ]
+- Error messages (if any): [Y]
+    - Message: [ORA-02292: integrity constraint (AS14128.BITES_BITER_FK) violated - child record]
+    - Explain: [ The error indicates that integretiy constraint was violated. It occured because 
+                we attempted to delete a record from a parent table (DOG) which has a foreign key reference (SERIALNUMBER) 
+                to a child table (BITES) but a record exists in that child table. ]
+
+ANSWER6:
+- Tables changed (if any): [DOG]
+    - Explain: [ The record with SERIALNUMBER equal to 3 in the table DOG was successfuly updated as we corrected its BREED value to 'Poodle' ]
+- Error messages (if any): [N]
+    - Message: [copy the error here]
+    - Explain: [what the error was / why did it occur?]
+
+
+ANSWER7:
+- Tables changed (if any): [STUDENT]
+    - Explain: [A new record was successfuly inserted into table STUDENT with NULL NETID]
+- Error messages (if any): [N]
+    - Message: [copy the error here]
+    - Explain: [what the error was / why did it occur?]
+
+ANSWER8:
+- Tables changed (if any): [state table name(s) here]
+    - Explain: [why the table(s) were changed]
+- Error messages (if any): [Y]
+    - Message: [ORA-00001: unique constraint (AS14128.STUDENT_NET_ID_UNIQUE) violated]
+    - Explain: [ The error indicates that a unique constraint was violated. It occured becuase we 
+                attempted to INSERT a new record into table STUDENT having a duplicate value ( 'aa1' ) 
+                in a restricted field (NetID). The NetID field is restricted because it has the unique constraint added.]

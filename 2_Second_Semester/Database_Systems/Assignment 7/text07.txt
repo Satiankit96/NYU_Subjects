@@ -1,0 +1,42 @@
+zk1
+
+Please replace the NetID above with your own NetID
+
+Please replace [] parts with your own answer.
+
+
+ANSWER4:
+- Tables changed (if any): [state table name(s) here]
+    - Explain: [why the table(s) were changed]
+- Error messages (if any): [Y/N]
+    - Message: [copy the error here]
+    - Explain: [what the error was / why did it occur?]
+
+ANSWER5:
+- Tables changed (if any): [state table name(s) here]
+    - Explain: [why the table(s) were changed]
+- Error messages (if any): [Y/N]
+    - Message: [copy the error here]
+    - Explain: [what the error was / why did it occur?]
+
+ANSWER6:
+- Tables changed (if any): [state table name(s) here]
+    - Explain: [why the table(s) were changed]
+- Error messages (if any): [Y/N]
+    - Message: [copy the error here]
+    - Explain: [what the error was / why did it occur?]
+
+
+ANSWER7:
+- Tables changed (if any): [state table name(s) here]
+    - Explain: [why the table(s) were changed]
+- Error messages (if any): [Y/N]
+    - Message: [copy the error here]
+    - Explain: [what the error was / why did it occur?]
+
+ANSWER8:
+- Tables changed (if any): [state table name(s) here]
+    - Explain: [why the table(s) were changed]
+- Error messages (if any): [Y/N]
+    - Message: [copy the error here]
+    - Explain: [what the error was / why did it occur?]
