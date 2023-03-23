@@ -1,0 +1,127 @@
+./mmu_generator -P9 -V6 -i20000 -E4 -m -w -H6 -r70.000000 -L4.000000 -v
+
+
+
+DATA STRUCTURES
+---------------
+struct frame {
+  int pid = -1;
+  int vpage = -1;
+
+  // other stuff you probably want to add
+  bool mapped = false;
+  int index;
+  unsigned int age : 32; // idk why this is 32 bit might not need to be
+  unsigned int timestamp = 0;
+
+}
+void reset_frame(frame_t *frame); // sets all frame values to their intial state
+void resetFrameTable(frame_t frameTable[], int size);
+
+struct pte { // needs to be 32 bits
+  unsigned int present : 1;
+  unsigned int referenced : 1;
+  unsigned int modified : 1;
+  unsigned int writeProtect : 1;
+  unsigned int pagedOut : 1;
+  unsigned int frameIndex : 7;
+  unsigned int isFileMapped : 1;
+  unsigned int padding : 19;
+}
+void reset_pte(pte_t *pte); // marks all bits as zero
+
+struct VMA {
+  int startingVirtualPage; // example: 15
+  int endingVirtualPage; // example: 63
+  bool writeProtected; // example: True
+  bool fileMapped; // example: False
+}
+
+class Process {
+  int pid;
+  vector<VMA> vmas;
+  pte pageTable[PT_SIZE]; // PT_SIZE = 64
+
+  Process(int pid);
+  void addVMA(VMA_t vma) { vmas.push_back(vma); }
+  VMA_t *getCorrespondingVMA(int vpage);
+  void initializePageTable(); // just calls reset_pte for all entries in pageTable  
+}
+
+ALGO
+Process* currentProcess = nullptr;
+int instrCount = 0;
+while (reader.getInstruction(&operation, &vpage))
+{
+  // 4 kinds of operations -> c: context switch, e: exit, r: read, w: write
+  // handle special case of “c” and “e” instruction
+  if (operation == 'c')
+  {
+    currentProcess = allProcesses[vpage]; // for c and e instructions the vpage is actually the pid of the process we want
+    simState.addCycles(CONTEXT_SWITCH);
+  }
+  else if (operation == 'e')
+  {
+    // add cycles for PROCESS_EXIT
+    // reclaim the frames from the process (call reclaimFrames() function)
+    // (reclaimFrames(): goes through page table of exiting process if entry is present then we UNMAP and if entry was fileMapped then we also FOUT)
+    // currentProcess = nullptr;
+  }
+  else // for r and w
+  {
+    simState.addCycles(ACCESS); // both r and w have same access cost of 1
+
+    pte_t *pte = &currentProcess->page_table[vpage];
+    if ( ! pte->present) {
+    {
+      // this in reality generates the page fault exception and now you execute
+      // verify this is actually a valid page in a vma if not raise error and next inst
+
+      // get correspondingVMA
+      if (correspondingVMA == nullptr)
+      {
+        // this is a SEGV
+        continue;
+      }
+      else // set some stuff in the pte from correspondingVMA
+      {
+        // set the write protect
+        // set isFileMapped
+      }
+
+      frame_t *newframe = get_frame();
+
+      //-> figure out if/what to do with old frame if it was mapped
+      // see general outline in MM-slides under Lab3 header
+      // see whether and how to bring in the content of the access page.
+
+      // check if frame is empty
+      if (newFrame->mapped)
+      {
+        // do an UNMAPing
+
+        // if its been modified then we need to handle FOUT and out
+      }
+
+      // handle FIN
+      // handle IN
+      // handle ZERO
+
+      // handle MAP
+
+    }
+
+    // set referenced and modified bit here
+    // simulate instruction execution by hardware by updating the R/M PTE bits
+    // update_pte(read/modify) bits based on operations
+
+    // set referenced
+    if (operation = 'w')
+    {
+      // check if its write protected -> if yes then SEGPROT otherwise set modified
+    }
+  }
+
+
+  instrCount++;
+}
