@@ -1,0 +1,350 @@
+> rsaim @ Saims-MacBook-Pro.local ~/Downloads/adb_final_project 01:19:45
+$ docker build -t rsaim/test-adb -f Dockerfile . && docker run rsaim/test-adb
+[+] Building 1.3s (11/11) FINISHED
+ => [internal] load build definition from Dockerfile                                                                                                                                                                                                                    0.0s
+ => => transferring dockerfile: 37B                                                                                                                                                                                                                                     0.0s
+ => [internal] load .dockerignore                                                                                                                                                                                                                                       0.0s
+ => => transferring context: 2B                                                                                                                                                                                                                                         0.0s
+ => [internal] load metadata for docker.io/library/openjdk:8-jdk-alpine                                                                                                                                                                                                 0.2s
+ => [1/6] FROM docker.io/library/openjdk:8-jdk-alpine@sha256:94792824df2df33402f201713f932b58cb9de94a0cd524164a0f2283343547b3                                                                                                                                           0.0s
+ => [internal] load build context                                                                                                                                                                                                                                       0.0s
+ => => transferring context: 7.20kB                                                                                                                                                                                                                                     0.0s
+ => CACHED [2/6] RUN apk add --no-cache python3 && python3 -m ensurepip && pip3 install --upgrade pip setuptools && rm -r /usr/lib/python*/ensurepip && if [ ! -e /usr/bin/pip ]; then ln -s pip3 /usr/bin/pip ; fi && if [[ ! -e /usr/bin/python ]]; then ln -sf /usr  0.0s
+ => [3/6] COPY repcrec_project/ ./repcrec_project/                                                                                                                                                                                                                      0.0s
+ => [4/6] WORKDIR /repcrec_project/src/rep                                                                                                                                                                                                                              0.0s
+ => [5/6] RUN javac *.java                                                                                                                                                                                                                                              1.0s
+ => [6/6] WORKDIR /repcrec_project/src                                                                                                                                                                                                                                  0.0s
+ => exporting to image                                                                                                                                                                                                                                                  0.0s
+ => => exporting layers                                                                                                                                                                                                                                                 0.0s
+ => => writing image sha256:b235478e75f03ee33d90ea5dff2de2bb747916ee866c3f5f910475d00ffb2d5a                                                                                                                                                                            0.0s
+ => => naming to docker.io/rsaim/test-adb                                                                                                                                                                                                                               0.0s
+
+Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
+['../inputfiles/test9.txt', '../inputfiles/test3.txt', '../inputfiles/test11.txt', '../inputfiles/test14.txt', '../inputfiles/test18.txt', '../inputfiles/test6.txt', '../inputfiles/test12.txt', '../inputfiles/test5.txt', '../inputfiles/test4.txt', '../inputfiles/test19.txt', '../inputfiles/test17.txt', '../inputfiles/test13.txt', '../inputfiles/test2.txt', '../inputfiles/test7.txt', '../inputfiles/test1.txt', '../inputfiles/test8.txt', '../inputfiles/test10.txt', '../inputfiles/test16.txt', '../inputfiles/test15.txt']
+
+**********  Running test for ../inputfiles/test3.txt **********
+[ Begin ] : T1 (type RW)  initialized.
+[ Begin ] : T2 (type RW)  initialized.
+[ Read ] : Transaction T1 has read variable x3.4 of value 30
+[ Fail ] :  Site 2 is down.
+[ Write ] : Transaction T2 has updated variable x8 to 88 in local copy
+[ Read ] : Transaction T2 has read variable x3.4 of value 30
+[ Write ] : Transaction T1 has updated variable x5 to 91 in local copy
+[ Commit ] : Transaction T2- updated the value of x8 to 88 in database.
+[ Terminate ] : Transaction T2 terminated.
+[ Recover ] : Site 2 is up after recovery.
+[ Commit ] : Transaction T1- updated the value of x5 to 91 in database.
+[ Terminate ] : Transaction T1 terminated.
+
+**********  Running test for ../inputfiles/test11.txt **********
+[ Begin ] : T1 (type RW)  initialized.
+[ Begin ] : T2 (type RW)  initialized.
+[ Read ] : Transaction T1 has read variable x2.1 of value 20
+[ Read ] : Transaction T2 has read variable x2.1 of value 20
+[ On Waitlist ] : Write x2 on Transaction T2
+[ Terminate ] : Transaction T1 terminated.
+[ Write ] : Transaction T2 has updated variable x2 to 10 in local copy
+[ Commit ] : Transaction T2- updated the value of x2 to 10 in database.
+[ Terminate ] : Transaction T2 terminated.
+
+**********  Running test for ../inputfiles/test14.txt **********
+[ Begin ] : T1 (type RW)  initialized.
+[ Begin ] : T2 (type RW)  initialized.
+[ Begin ] : T3 (type RW)  initialized.
+[ Write ] : Transaction T3 has updated variable x2 to 10 in local copy
+[ On Waitlist ] : Write x2 on Transaction T1
+[ On Waitlist ] : Write x2 on Transaction T2
+[ Commit ] : Transaction T3- updated the value of x2 to 10 in database.
+[ Terminate ] : Transaction T3 terminated.
+[ Write ] : Transaction T1 has updated variable x2 to 10 in local copy
+[ Commit ] : Transaction T1- updated the value of x2 to 10 in database.
+[ Terminate ] : Transaction T1 terminated.
+[ Write ] : Transaction T2 has updated variable x2 to 10 in local copy
+[ Commit ] : Transaction T2- updated the value of x2 to 10 in database.
+[ Terminate ] : Transaction T2 terminated.
+
+**********  Running test for ../inputfiles/test18.txt **********
+[ Begin ] : T1 (type RW)  initialized.
+[ Begin ] : T2 (type RW)  initialized.
+[ Begin ] : T3 (type RW)  initialized.
+[ Begin ] : T4 (type RW)  initialized.
+[ Begin ] : T5 (type RW)  initialized.
+[ Read ] : Transaction T3 has read variable x3.4 of value 30
+[ Read ] : Transaction T4 has read variable x4.1 of value 40
+[ Read ] : Transaction T5 has read variable x5.6 of value 50
+[ Read ] : Transaction T1 has read variable x1.2 of value 10
+[ Read ] : Transaction T2 has read variable x2.1 of value 20
+[ On Waitlist ] : Write x2 on Transaction T1
+[ On Waitlist ] : Write x3 on Transaction T2
+[ On Waitlist ] : Write x4 on Transaction T3
+[ On Waitlist ] : Write x5 on Transaction T4
+[ On Waitlist ] : Write x1 on Transaction T5
+[ Deadlock ] : Deadlock detected, T4 aborted
+WARNING: Transaction T4 does not exist
+[ Terminate ] : Transaction T3 terminated.
+[ Terminate ] : Transaction T2 terminated.
+[ Write ] : Transaction T1 has updated variable x2 to 10 in local copy
+[ Commit ] : Transaction T1- updated the value of x2 to 10 in database.
+[ Terminate ] : Transaction T1 terminated.
+[ Write ] : Transaction T5 has updated variable x1 to 50 in local copy
+
+**********  Running test for ../inputfiles/test6.txt **********
+[ Begin ] : T1 (type RW)  initialized.
+[ Begin ] : T2 (type RW)  initialized.
+[ Fail ] :  Site 3 is down.
+[ Fail ] :  Site 4 is down.
+[ Read ] : Transaction T1 has read variable x1.2 of value 10
+[ Write ] : Transaction T2 has updated variable x8 to 88 in local copy
+[ Terminate ] : Transaction T1 terminated.
+[ Recover ] : Site 4 is up after recovery.
+[ Recover ] : Site 3 is up after recovery.
+[ Read ] : Transaction T2 has read variable x3.4 of value 30
+[ Commit ] : Transaction T2- updated the value of x8 to 88 in database.
+[ Terminate ] : Transaction T2 terminated.
+<-----******----->
+[ Dump ] :
+site 1 - x2: 20, x4: 40, x6: 60, x8: 88, x10: 100, x12: 120, x14: 140, x16: 160, x18: 180, x20: 200
+site 2 - x1: 10, x2: 20, x4: 40, x6: 60, x8: 88, x10: 100, x11: 110, x12: 120, x14: 140, x16: 160, x18: 180, x20: 200
+site 3 - x2: 20, x12: 120,
+site 4 - x3: 30, x13: 130,
+site 5 - x2: 20, x4: 40, x6: 60, x8: 88, x10: 100, x12: 120, x14: 140, x16: 160, x18: 180, x20: 200
+site 6 - x2: 20, x4: 40, x5: 50, x6: 60, x8: 88, x10: 100, x12: 120, x14: 140, x15: 150, x16: 160, x18: 180, x20: 200
+site 7 - x2: 20, x4: 40, x6: 60, x8: 88, x10: 100, x12: 120, x14: 140, x16: 160, x18: 180, x20: 200
+site 8 - x2: 20, x4: 40, x6: 60, x7: 70, x8: 88, x10: 100, x12: 120, x14: 140, x16: 160, x17: 170, x18: 180, x20: 200
+site 9 - x2: 20, x4: 40, x6: 60, x8: 88, x10: 100, x12: 120, x14: 140, x16: 160, x18: 180, x20: 200
+site 10 - x2: 20, x4: 40, x6: 60, x8: 88, x9: 90, x10: 100, x12: 120, x14: 140, x16: 160, x18: 180, x19: 190, x20: 200
+
+**********  Running test for ../inputfiles/test12.txt **********
+[ Begin ] : T1 (type RW)  initialized.
+[ Begin ] : T2 (type RW)  initialized.
+[ Read ] : Transaction T1 has read variable x2.1 of value 20
+[ Read ] : Transaction T2 has read variable x2.1 of value 20
+[ Terminate ] : Transaction T1 terminated.
+[ Write ] : Transaction T2 has updated variable x2 to 10 in local copy
+[ Commit ] : Transaction T2- updated the value of x2 to 10 in database.
+[ Terminate ] : Transaction T2 terminated.
+
+**********  Running test for ../inputfiles/test5.txt **********
+[ Begin ] : T1 (type RW)  initialized.
+[ Begin ] : T2 (type RW)  initialized.
+[ Write ] : Transaction T1 has updated variable x6 to 66 in local copy
+[ Fail ] :  Site 2 is down.
+WARNING: T1 is aborted because Site 2 is down.
+[ Write ] : Transaction T2 has updated variable x8 to 88 in local copy
+[ Read ] : Transaction T2 has read variable x3.4 of value 30
+WARNING: Transaction with ID T1 does not exist.
+[ Commit ] : Transaction T2- updated the value of x8 to 88 in database.
+[ Terminate ] : Transaction T2 terminated.
+[ Recover ] : Site 2 is up after recovery.
+WARNING: Transaction T1 does not exist
+
+**********  Running test for ../inputfiles/test4.txt **********
+[ Begin ] : T1 (type RW)  initialized.
+[ Begin ] : T2 (type RW)  initialized.
+[ Read ] : Transaction T1 has read variable x1.2 of value 10
+[ Fail ] :  Site 2 is down.
+WARNING: T1 is aborted because Site 2 is down.
+[ Write ] : Transaction T2 has updated variable x8 to 88 in local copy
+[ Read ] : Transaction T2 has read variable x3.4 of value 30
+WARNING: Transaction with ID T1 does not exist.
+[ Commit ] : Transaction T2- updated the value of x8 to 88 in database.
+[ Terminate ] : Transaction T2 terminated.
+[ Recover ] : Site 2 is up after recovery.
+WARNING: Transaction T1 does not exist
+
+**********  Running test for ../inputfiles/test19.txt **********
+[ Begin ] : T1 (type RW)  initialized.
+[ Begin ] : T2 (type RW)  initialized.
+[ Begin ] : T3 (type RW)  initialized.
+[ Begin ] : T4 (type RW)  initialized.
+[ Begin ] : T5 (type RW)  initialized.
+[ Read ] : Transaction T3 has read variable x3.4 of value 30
+[ Fail ] :  Site 4 is down.
+WARNING: T3 is aborted because Site 4 is down.
+[ Recover ] : Site 4 is up after recovery.
+[ Read ] : Transaction T4 has read variable x4.1 of value 40
+[ Read ] : Transaction T5 has read variable x5.6 of value 50
+[ Read ] : Transaction T1 has read variable x6.1 of value 60
+[ Read ] : Transaction T2 has read variable x2.1 of value 20
+[ On Waitlist ] : Write x2 on Transaction T1
+[ Write ] : Transaction T2 has updated variable x3 to 20 in local copy
+[ WARNING ]: Transaction T3 does not exist
+[ Write ] : Transaction T5 has updated variable x1 to 50 in local copy
+[ Commit ] : Transaction T5- updated the value of x1 to 50 in database.
+[ Terminate ] : Transaction T5 terminated.
+[ Write ] : Transaction T4 has updated variable x5 to 40 in local copy
+[ Commit ] : Transaction T4- updated the value of x5 to 40 in database.
+[ Terminate ] : Transaction T4 terminated.
+WARNING: Transaction T3 does not exist
+[ Commit ] : Transaction T2- updated the value of x3 to 20 in database.
+[ Terminate ] : Transaction T2 terminated.
+[ Write ] : Transaction T1 has updated variable x2 to 10 in local copy
+[ Commit ] : Transaction T1- updated the value of x2 to 10 in database.
+[ Terminate ] : Transaction T1 terminated.
+
+**********  Running test for ../inputfiles/test17.txt **********
+[ Begin ] : T3 (type RW)  initialized.
+[ Begin ] : T1 (type RW)  initialized.
+[ Begin ] : T2 (type RW)  initialized.
+[ Write ] : Transaction T3 has updated variable x2 to 22 in local copy
+[ Write ] : Transaction T2 has updated variable x3 to 44 in local copy
+[ On Waitlist ]: Read x3 on Transaction T3
+[ Commit ] : Transaction T2- updated the value of x3 to 44 in database.
+[ Terminate ] : Transaction T2 terminated.
+[ Read ] : Transaction T3 has read variable x3.4 of value 44
+[ Fail ] :  Site 4 is down.
+WARNING: T3 is aborted because Site 4 is down.
+WARNING: Transaction T3 does not exist
+[ Read ] : Transaction T1 has read variable x2.1 of value 20
+[ Terminate ] : Transaction T1 terminated.
+
+**********  Running test for ../inputfiles/test13.txt **********
+[ Begin ] : T1 (type RW)  initialized.
+[ Begin ] : T2 (type RW)  initialized.
+[ Begin ] : T3 (type RW)  initialized.
+[ Write ] : Transaction T3 has updated variable x2 to 10 in local copy
+[ On Waitlist ] : Write x2 on Transaction T2
+[ On Waitlist ] : Write x2 on Transaction T1
+[ Commit ] : Transaction T3- updated the value of x2 to 10 in database.
+[ Terminate ] : Transaction T3 terminated.
+[ Write ] : Transaction T2 has updated variable x2 to 10 in local copy
+[ Commit ] : Transaction T2- updated the value of x2 to 10 in database.
+[ Terminate ] : Transaction T2 terminated.
+[ Write ] : Transaction T1 has updated variable x2 to 10 in local copy
+[ Commit ] : Transaction T1- updated the value of x2 to 10 in database.
+[ Terminate ] : Transaction T1 terminated.
+
+**********  Running test for ../inputfiles/test2.txt **********
+[ Begin ] : T1 (type RW)  initialized.
+[ Begin ] : T2 (type RO)  initialized.
+[ Write ] : Transaction T1 has updated variable x1 to 101 in local copy
+[ On WaitList ] : Read x2 on Transaction T2
+[ Write ] : Transaction T1 has updated variable x2 to 102 in local copy
+[ On WaitList ] : Read x1 on Transaction T2
+[ Commit ] : Transaction T1- updated the value of x2 to 102 in database.
+[ Commit ] : Transaction T1- updated the value of x1 to 101 in database.
+[ Terminate ] : Transaction T1 terminated.
+[ On WaitList ] : Read x1 on Transaction T2
+[ Terminate ] : Transaction T2 terminated.
+<-----******----->
+[ Dump ] :
+site 1 - x2: 102, x4: 40, x6: 60, x8: 80, x10: 100, x12: 120, x14: 140, x16: 160, x18: 180, x20: 200
+site 2 - x1: 101, x2: 102, x4: 40, x6: 60, x8: 80, x10: 100, x11: 110, x12: 120, x14: 140, x16: 160, x18: 180, x20: 200
+site 3 - x2: 102, x4: 40, x6: 60, x8: 80, x10: 100, x12: 120, x14: 140, x16: 160, x18: 180, x20: 200
+site 4 - x2: 102, x3: 30, x4: 40, x6: 60, x8: 80, x10: 100, x12: 120, x13: 130, x14: 140, x16: 160, x18: 180, x20: 200
+site 5 - x2: 102, x4: 40, x6: 60, x8: 80, x10: 100, x12: 120, x14: 140, x16: 160, x18: 180, x20: 200
+site 6 - x2: 102, x4: 40, x5: 50, x6: 60, x8: 80, x10: 100, x12: 120, x14: 140, x15: 150, x16: 160, x18: 180, x20: 200
+site 7 - x2: 102, x4: 40, x6: 60, x8: 80, x10: 100, x12: 120, x14: 140, x16: 160, x18: 180, x20: 200
+site 8 - x2: 102, x4: 40, x6: 60, x7: 70, x8: 80, x10: 100, x12: 120, x14: 140, x16: 160, x17: 170, x18: 180, x20: 200
+site 9 - x2: 102, x4: 40, x6: 60, x8: 80, x10: 100, x12: 120, x14: 140, x16: 160, x18: 180, x20: 200
+site 10 - x2: 102, x4: 40, x6: 60, x8: 80, x9: 90, x10: 100, x12: 120, x14: 140, x16: 160, x18: 180, x19: 190, x20: 200
+
+**********  Running test for ../inputfiles/test7.txt **********
+[ Begin ] : T1 (type RW)  initialized.
+[ Begin ] : T2 (type RO)  initialized.
+[ On WaitList ] : Read x1 on Transaction T2
+[ On WaitList ] : Read x2 on Transaction T2
+[ Write ] : Transaction T1 has updated variable x3 to 33 in local copy
+[ Commit ] : Transaction T1- updated the value of x3 to 33 in database.
+[ Terminate ] : Transaction T1 terminated.
+[ On WaitList ] : Read x2 on Transaction T2
+[ On WaitList ] : Read x3 on Transaction T2
+[ Terminate ] : Transaction T2 terminated.
+
+**********  Running test for ../inputfiles/test1.txt **********
+[ Begin ] : T1 (type RW)  initialized.
+[ Begin ] : T2 (type RW)  initialized.
+[ Write ] : Transaction T1 has updated variable x1 to 101 in local copy
+[ Write ] : Transaction T2 has updated variable x2 to 202 in local copy
+[ On Waitlist ] : Write x2 on Transaction T1
+[ On Waitlist ] : Write x1 on Transaction T2
+[ Deadlock ] : Deadlock detected, T2 aborted
+[ Write ] : Transaction T1 has updated variable x2 to 102 in local copy
+[ Commit ] : Transaction T1- updated the value of x2 to 102 in database.
+[ Commit ] : Transaction T1- updated the value of x1 to 101 in database.
+[ Terminate ] : Transaction T1 terminated.
+<-----******----->
+[ Dump ] :
+site 1 - x2: 102, x4: 40, x6: 60, x8: 80, x10: 100, x12: 120, x14: 140, x16: 160, x18: 180, x20: 200
+site 2 - x1: 101, x2: 102, x4: 40, x6: 60, x8: 80, x10: 100, x11: 110, x12: 120, x14: 140, x16: 160, x18: 180, x20: 200
+site 3 - x2: 102, x4: 40, x6: 60, x8: 80, x10: 100, x12: 120, x14: 140, x16: 160, x18: 180, x20: 200
+site 4 - x2: 102, x3: 30, x4: 40, x6: 60, x8: 80, x10: 100, x12: 120, x13: 130, x14: 140, x16: 160, x18: 180, x20: 200
+site 5 - x2: 102, x4: 40, x6: 60, x8: 80, x10: 100, x12: 120, x14: 140, x16: 160, x18: 180, x20: 200
+site 6 - x2: 102, x4: 40, x5: 50, x6: 60, x8: 80, x10: 100, x12: 120, x14: 140, x15: 150, x16: 160, x18: 180, x20: 200
+site 7 - x2: 102, x4: 40, x6: 60, x8: 80, x10: 100, x12: 120, x14: 140, x16: 160, x18: 180, x20: 200
+site 8 - x2: 102, x4: 40, x6: 60, x7: 70, x8: 80, x10: 100, x12: 120, x14: 140, x16: 160, x17: 170, x18: 180, x20: 200
+site 9 - x2: 102, x4: 40, x6: 60, x8: 80, x10: 100, x12: 120, x14: 140, x16: 160, x18: 180, x20: 200
+site 10 - x2: 102, x4: 40, x6: 60, x8: 80, x9: 90, x10: 100, x12: 120, x14: 140, x16: 160, x18: 180, x19: 190, x20: 200
+
+**********  Running test for ../inputfiles/test8.txt **********
+[ Begin ] : T1 (type RW)  initialized.
+[ Begin ] : T2 (type RO)  initialized.
+[ On WaitList ] : Read x1 on Transaction T2
+[ On WaitList ] : Read x2 on Transaction T2
+[ Write ] : Transaction T1 has updated variable x3 to 33 in local copy
+[ Commit ] : Transaction T1- updated the value of x3 to 33 in database.
+[ Terminate ] : Transaction T1 terminated.
+[ On WaitList ] : Read x2 on Transaction T2
+[ Begin ] : T3 (type RO)  initialized.
+[ On WaitList ] : Read x3 on Transaction T3
+[ On WaitList ] : Read x3 on Transaction T2
+[ Terminate ] : Transaction T2 terminated.
+[ On WaitList ] : Read x3 on Transaction T3
+[ Terminate ] : Transaction T3 terminated.
+
+**********  Running test for ../inputfiles/test10.txt **********
+[ Begin ] : T1 (type RW)  initialized.
+[ Begin ] : T2 (type RW)  initialized.
+[ Begin ] : T3 (type RW)  initialized.
+[ Write ] : Transaction T3 has updated variable x2 to 22 in local copy
+[ Write ] : Transaction T2 has updated variable x4 to 44 in local copy
+[ On Waitlist ]: Read x4 on Transaction T3
+[ Commit ] : Transaction T2- updated the value of x4 to 44 in database.
+[ Terminate ] : Transaction T2 terminated.
+[ Read ] : Transaction T3 has read variable x4.1 of value 44
+[ Commit ] : Transaction T3- updated the value of x2 to 22 in database.
+[ Terminate ] : Transaction T3 terminated.
+[ Read ] : Transaction T1 has read variable x2.1 of value 22
+[ Terminate ] : Transaction T1 terminated.
+
+**********  Running test for ../inputfiles/test16.txt **********
+[ Begin ] : T3 (type RW)  initialized.
+[ Begin ] : T1 (type RW)  initialized.
+[ Begin ] : T2 (type RW)  initialized.
+[ Write ] : Transaction T3 has updated variable x2 to 22 in local copy
+[ Write ] : Transaction T2 has updated variable x4 to 44 in local copy
+[ On Waitlist ]: Read x4 on Transaction T3
+[ Commit ] : Transaction T2- updated the value of x4 to 44 in database.
+[ Terminate ] : Transaction T2 terminated.
+[ Read ] : Transaction T3 has read variable x4.1 of value 44
+[ Commit ] : Transaction T3- updated the value of x2 to 22 in database.
+[ Terminate ] : Transaction T3 terminated.
+[ Read ] : Transaction T1 has read variable x2.1 of value 22
+[ Terminate ] : Transaction T1 terminated.
+
+**********  Running test for ../inputfiles/test15.txt **********
+[ Begin ] : T5 (type RW)  initialized.
+[ Begin ] : T4 (type RW)  initialized.
+[ Begin ] : T3 (type RW)  initialized.
+[ Begin ] : T2 (type RW)  initialized.
+[ Begin ] : T1 (type RW)  initialized.
+[ Write ] : Transaction T1 has updated variable x4 to 5 in local copy
+[ Fail ] :  Site 2 is down.
+WARNING: T1 is aborted because Site 2 is down.
+[ Write ] : Transaction T2 has updated variable x4 to 44 in local copy
+[ Recover ] : Site 2 is up after recovery.
+[ On Waitlist ] : Write x4 on Transaction T3
+[ On Waitlist ] : Write x4 on Transaction T4
+[ On Waitlist ] : Write x4 on Transaction T5
+WARNING: Transaction T1 does not exist
+[ Commit ] : Transaction T2- updated the value of x4 to 44 in database.
+[ Terminate ] : Transaction T2 terminated.
+[ Write ] : Transaction T3 has updated variable x4 to 55 in local copy
+[ Commit ] : Transaction T3- updated the value of x4 to 55 in database.
+[ Terminate ] : Transaction T3 terminated.
+[ Write ] : Transaction T4 has updated variable x4 to 66 in local copy
+[ Commit ] : Transaction T4- updated the value of x4 to 66 in database.
+[ Terminate ] : Transaction T4 terminated.
+[ Write ] : Transaction T5 has updated variable x4 to 77 in local copy
+[ Commit ] : Transaction T5- updated the value of x4 to 77 in database.
+[ Terminate ] : Transaction T5 terminated.
