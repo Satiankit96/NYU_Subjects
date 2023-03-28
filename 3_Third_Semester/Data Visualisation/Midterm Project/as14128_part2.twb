@@ -1,0 +1,362 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20223.22.1005.1835                               -->
+<workbook original-version='18.1' source-build='2022.3.0 (20223.22.1005.1835)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Tableau for Healthcare - Datasets' inline='true' name='federated.1f2wle6148q6ea13wedw818nxmi5' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Tableau for Healthcare - Datasets' name='excel-direct.0r7e09n1dmjq0z12vv7871kwwjap'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/3.New York University/Subjects/Third Semester/Healthcare/Midterm_Project/Tableau for Healthcare - Datasets.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0r7e09n1dmjq0z12vv7871kwwjap' name='City Health Ctr FTE Counts' table='[&apos;City Health Ctr FTE Counts$&apos;]' type='table'>
+          <columns gridOrigin='A1:C6:no:A1:C6:0' header='yes' outcome='6'>
+            <column datatype='string' name='City Health Center' ordinal='0' />
+            <column datatype='integer' name='Budgeted FTE' ordinal='1' />
+            <column datatype='integer' name='Actual FTE' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0r7e09n1dmjq0z12vv7871kwwjap' name='City Health Ctr FTE Counts' table='[&apos;City Health Ctr FTE Counts$&apos;]' type='table'>
+          <columns gridOrigin='A1:C6:no:A1:C6:0' header='yes' outcome='6'>
+            <column datatype='string' name='City Health Center' ordinal='0' />
+            <column datatype='integer' name='Budgeted FTE' ordinal='1' />
+            <column datatype='integer' name='Actual FTE' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[City Health Ctr FTE Counts]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C6:no:A1:C6:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City Health Center</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City Health Center]</local-name>
+            <parent-name>[City Health Ctr FTE Counts]</parent-name>
+            <remote-alias>City Health Center</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[City Health Ctr FTE Counts_4CDCEA527F954BA6B448A7DE176101D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Budgeted FTE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Budgeted FTE]</local-name>
+            <parent-name>[City Health Ctr FTE Counts]</parent-name>
+            <remote-alias>Budgeted FTE</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[City Health Ctr FTE Counts_4CDCEA527F954BA6B448A7DE176101D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Actual FTE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Actual FTE]</local-name>
+            <parent-name>[City Health Ctr FTE Counts]</parent-name>
+            <remote-alias>Actual FTE</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[City Health Ctr FTE Counts_4CDCEA527F954BA6B448A7DE176101D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='diff_Field' datatype='integer' name='[Calculation_1167839702870183936]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Budgeted FTE] - [Actual FTE]' />
+      </column>
+      <column caption='colorfield' datatype='real' name='[Calculation_1167839702873817090]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='if SUM([City Health Center])&gt;window_avg(AVG([Calculation_1167839702870183936])) then &apos;Above Average&apos;&#13;&#10;elseif SUM([City Health Center])=window_avg(AVG([Calculation_1167839702870183936])) then &apos;Average&apos;&#13;&#10;elseif SUM([City Health Center])&lt;window_avg(AVG([Calculation_1167839702870183936])) then &apos;Below Average&apos;&#13;&#10;end' />
+      </column>
+      <column caption='Rank' datatype='integer' name='[Calculation_1167839702877712390]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='RANK(SUM([Calculation_1167839702870183936]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='string' name='[City Health Center]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='City Health Ctr FTE Counts' datatype='table' name='[__tableau_internal_object_id__].[City Health Ctr FTE Counts_4CDCEA527F954BA6B448A7DE176101D2]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='City Health Ctr FTE Counts' id='City Health Ctr FTE Counts_4CDCEA527F954BA6B448A7DE176101D2'>
+            <properties context=''>
+              <relation connection='excel-direct.0r7e09n1dmjq0z12vv7871kwwjap' name='City Health Ctr FTE Counts' table='[&apos;City Health Ctr FTE Counts$&apos;]' type='table'>
+                <columns gridOrigin='A1:C6:no:A1:C6:0' header='yes' outcome='6'>
+                  <column datatype='string' name='City Health Center' ordinal='0' />
+                  <column datatype='integer' name='Budgeted FTE' ordinal='1' />
+                  <column datatype='integer' name='Actual FTE' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='deviation_bar_chart_for_fte_counts_in_city_health_Centers'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Difference Budgeted and Actual FTE across City Health Centers</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Tableau for Healthcare - Datasets' name='federated.1f2wle6148q6ea13wedw818nxmi5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1f2wle6148q6ea13wedw818nxmi5'>
+            <column datatype='integer' name='[Actual FTE]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Budgeted FTE]' role='measure' type='quantitative' />
+            <column caption='diff_Field' datatype='integer' name='[Calculation_1167839702870183936]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Budgeted FTE] - [Actual FTE]' />
+            </column>
+            <column caption='Rank' datatype='integer' name='[Calculation_1167839702877712390]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='RANK(SUM([Calculation_1167839702870183936]))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column datatype='string' name='[City Health Center]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column-instance column='[City Health Center]' derivation='None' name='[none:City Health Center:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1167839702870183936]' derivation='Sum' name='[sum:Calculation_1167839702870183936:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1167839702877712390]' derivation='User' name='[usr:Calculation_1167839702877712390:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1f2wle6148q6ea13wedw818nxmi5].[none:City Health Center:nk]' value='true' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' center='0' field='[federated.1f2wle6148q6ea13wedw818nxmi5].[sum:Calculation_1167839702870183936:qk]' max='14' min='-14' num-steps='2' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#2134dd</color>
+                <color>#3243dc</color>
+                <color>#4252dc</color>
+                <color>#5361db</color>
+                <color>#6470db</color>
+                <color>#757fdb</color>
+                <color>#868eda</color>
+                <color>#969dda</color>
+                <color>#a7acda</color>
+                <color>#b8bbd9</color>
+                <color>#c8cad9</color>
+                <color>#d9d9d9</color>
+                <color>#c2d0c0</color>
+                <color>#acc8a9</color>
+                <color>#98c093</color>
+                <color>#85b87f</color>
+                <color>#72b06c</color>
+                <color>#61a75a</color>
+                <color>#529f49</color>
+                <color>#439739</color>
+                <color>#358f2b</color>
+                <color>#29871e</color>
+                <color>#1e7f13</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1f2wle6148q6ea13wedw818nxmi5].[sum:Calculation_1167839702870183936:qk]' value='Difference (Budgeted FTE - Actual FTE)'>
+              <formatted-text>
+                <run>Difference (Budgeted FTE - Actual FTE)</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1f2wle6148q6ea13wedw818nxmi5].[sum:Calculation_1167839702870183936:qk]' />
+              <lod column='[federated.1f2wle6148q6ea13wedw818nxmi5].[usr:Calculation_1167839702877712390:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1f2wle6148q6ea13wedw818nxmi5].[sum:Calculation_1167839702870183936:qk]</rows>
+        <cols>[federated.1f2wle6148q6ea13wedw818nxmi5].[none:City Health Center:nk]</cols>
+      </table>
+      <simple-id uuid='{7EF1CCED-1661-4303-B581-F497387ABDDE}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='deviation_bar_chart_for_fte_counts_in_city_health_Centers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.1f2wle6148q6ea13wedw818nxmi5].[sum:Calculation_1167839702870183936:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1f2wle6148q6ea13wedw818nxmi5].[diff:sum:Calculation_1167839702870183936:qk]</field>
+            <field>[federated.1f2wle6148q6ea13wedw818nxmi5].[none:City Health Center:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F34638DB-0542-4ADB-A9A6-15D298EDEB97}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='deviation_bar_chart_for_fte_counts_in_city_health_Centers' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
