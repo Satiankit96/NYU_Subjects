@@ -1,7 +1,6 @@
 1. Advance Database Systems - 96.42 - A 
 2. Data Visualisation - 88.93 - A-
-
-
+3. Devops and Platform Engineering - 98.89 - A
 
 
 1. Advance Database Systems - 96.42 - A 
@@ -26,8 +25,6 @@ Pros
 Cons 
 - The final project is very extensive. Even if you begin early there is no chance to tell whether it will be finished or not.
 - The course is offline and the professor is really strict about the attendance.
-
-
 
 
 2. Data Visualisation - 88.93 - A-
@@ -62,3 +59,32 @@ Cons
 - Professor promissed access to the NYU Supercomputer but we never got to that part of the course.
 - There are no office hours and they ar repeatedly cancelled.
 
+
+3. Devops and Platform Engineering - 98.89 - A
+Difficulty - 2/5
+github - https://github.com/CSCI-GA-2820-FA22-003
+Zenhub - https://app.zenhub.com/workspaces/development-team-6334af72f50c710013293424/board 
+
+Scores 
+Run down 1 - 100/100 - Agile Planning
+Run down 2 - 95/100  - Develop the RESTful Service locally
+Run down 3 - 100/100 - Final Deployment CI/CD pipeline
+Run down 4 - 100/100 - Presentation 
+
+Midterms Exam - 98/100
+Final Exam - 98/100
+Final Project - 98.92
+
+Pros 
+- Professor is one of the best at NYU. Project will be worked by an entire class of over 60 students working in a Devops Model. 
+- The projects are engaging and professor is really fair with the assessments.
+- We get to work with the real world organisations. Professor brings a guest almost every class.
+- He will wait and take all the questions till the every last one is cancelled.
+
+Cons 
+- The project is very confined and we cannot make a lot of changes. 
+
+
+Final Deployment and CI/CD pipeline 
+- Link 1 - http://169.51.206.138:31001
+- Link 2 - http://169.51.206.138:31002
