@@ -26,3 +26,9 @@ EXAMS
     Feedback Date - Oct 25, 2022 9:38 PM
     Assignment - DevOps Mid-term Exam
     Completion Date: Oct 23, 2022 8:08 PM
+
+2. Final Exam
+    Score - 98 / 100 - A
+    Feedback Date - Dec 19, 2022 6:57 PM
+    Assignment - DevOps Final Exam
+    Completion Date: Dec 19, 2022 5:00 PM
