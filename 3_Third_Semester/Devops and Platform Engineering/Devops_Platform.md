@@ -15,9 +15,10 @@ Description.
 - Set up the Zenhub board and the github to relay all the issues in order to create the recommendation filter.
 - Divided the work and assigned 16 issues in the first week.
 
+3. Final Deployment and CI/CD pipeline 
+Link 1 - http://169.51.206.138:31001
 
-
-
+Link 2 - http://169.51.206.138:31002
 
 
 EXAMS 
