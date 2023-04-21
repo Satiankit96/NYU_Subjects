@@ -12,7 +12,7 @@ Dificulty
 Scores 
 - Homework 1 - 100/100
 - Homework 2 -  98/100 
-- Homework 3 - Ongoing, Deadline April 19
+- Homework 3 - Completed and submitted 
 
 
 Internship report submission.
