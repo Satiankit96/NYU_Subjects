@@ -12,7 +12,9 @@ Dificulty
 Scores 
 - Homework 1 - 100/100
 - Homework 2 -  98/100 
-- Homework 3 - Completed and submitted 
-
+- Homework 3 - 96/100 ( Check the Status of Extra credits)
+ 
+ Test 
+ Test 1 - 7.8/10
 
 Internship report submission.
