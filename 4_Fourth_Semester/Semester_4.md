@@ -13,8 +13,9 @@ Scores
 - Homework 1 - 100/100
 - Homework 2 -  98/100 
 - Homework 3 - 96/100 ( Check the Status of Extra credits)
- 
+- Homework 4 - To be posted
  Test 
  Test 1 - 7.8/10
+ Test 2 - 10/10
 
 Internship report submission.
