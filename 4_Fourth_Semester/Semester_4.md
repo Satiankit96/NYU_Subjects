@@ -6,6 +6,11 @@ github - https://github.com/Satiankit96/Factovia_Small_scale_Factory
 2. I have completed 3 projects in python as well during the bootcamp duration.
 3. Starting week 4, I had started on my work on 3 mini projects. Voice assistant, Libarary management
 
+Internship report submission.
+Marking parameters - 13 
+POint received - 5/5 * 13
+Grade Projection - A
+
 2. Vision Meets Machine Learning 
 Dificulty 
 
@@ -19,6 +24,8 @@ Scores
  Test 1 - 7.8/10
  Test 2 - 10/10
 
-Internship report submission.
 Projection - 97/100
 Grade - A 
+
+
+
