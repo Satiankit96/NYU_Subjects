@@ -10,6 +10,7 @@ Internship report submission.
 Marking parameters - 13 
 POint received - 5/5 * 13
 Grade Projection - A
+Grade received - A (Subject CLosed- 5/19/2023)
 
 2. Vision Meets Machine Learning 
 Dificulty 
