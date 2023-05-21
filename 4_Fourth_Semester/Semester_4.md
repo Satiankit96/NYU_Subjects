@@ -23,7 +23,8 @@ Scores
 (Professor replied - Positive)
  Test 
  Test 1 - 7.8/10
- Test 2 - 10/10
+ Test 2 - Cummulative Marks 
+ Test 3 - Cancelled 
 
 Projection - 97/100
 Grade - A 
