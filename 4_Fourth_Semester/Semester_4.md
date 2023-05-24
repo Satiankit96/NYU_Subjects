@@ -19,14 +19,14 @@ Scores
 - Homework 1 - 100/100
 - Homework 2 -  98/100 
 - Homework 3 - 96/100 ( Check the Status of Extra credits) (10)
-- Homework 4 - To be posted
+- Homework 4 - 85(+10)/100
 (Professor replied - Positive)
  Test 
  Test 1 - 7.8/10
  Test 2 - Cummulative Marks 
  Test 3 - Cancelled 
 
-Projection - 97/100
+Projection - 95/100
 Grade - A 
 
 
