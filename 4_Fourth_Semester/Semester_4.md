@@ -16,11 +16,11 @@ Grade received - A (Subject CLosed- 5/19/2023)
 Dificulty 
 
 Scores 
-- Homework 1 - 100/100
-- Homework 2 -  98/100 
-- Homework 3 - 96/100 ( Check the Status of Extra credits) (10)
-- Homework 4 - 85(+10)/100
-(Professor replied - Positive)
+- Homework 1 - 100/100 (Uploaded)
+- Homework 2 -  98/100  (Uploaded)
+- Homework 3 - 96/100 ( Check the Status of Extra credits) (10) (Uploaded)
+- Homework 4 - 85(+10)/100 (Uploaded)
+(Professor replied - Positive) (Uploaded)
  Test 
  Test 1 - 7.8/10
  Test 2 - Cummulative Marks 
