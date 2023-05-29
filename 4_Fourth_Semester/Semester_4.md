@@ -29,5 +29,4 @@ Scores
 Projection - 95/100
 Grade - A 
 
-
-
+Final GPA - 3.92
