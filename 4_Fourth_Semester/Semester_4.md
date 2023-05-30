@@ -29,4 +29,5 @@ Scores
 Projection - 95/100
 Grade - A 
 
-Final GPA - 3.92
+Masters
+Final GPA - 3.92/4.00
